@@ -1,0 +1,367 @@
+@charset "UTF-8";
+header{
+	display:block;
+	background-color:#140726;
+	width:100%;
+	height:50px;
+}
+body{
+	background-image: url(../images/outer-space-wallpaper-4351-4405-hd-wallpapers.jpg);
+	background-color:#1e0a38;
+	background-attachment:scroll;
+	background-size:100;
+	margin:0;
+	color:#ffffff;
+}
+h1 {
+  background-color: #1e0a38;
+}
+
+.button{
+	width:70px;
+	height:25px;
+	background-color: #8000ff;
+	color:#ffffff;
+	font-family: cursive;
+	text-align:center;
+	text-decoration:none;
+	position:absolute;
+	left:700px;
+	top:10px;
+	box-shadow: 0px 0px 2px 2px #8000ff;
+	border:1px solid #8000ff;
+	border-radius:3px;
+}
+	.button:hover{
+		background-color: #d8a2fa;
+		border:1px solid #d8a2fa;
+		box-shadow: 0px 0px 2px 2px #d8a2fa;
+		transition: all 0.5s;
+		color:#000000;
+	}
+	.button:not(hover){
+		transition: all 0.5s;
+	}
+
+#planet1{
+	position:absolute;
+	top:250px;
+	left:180px;
+	animation-name:planet1;
+	border-radius: 100%;
+}
+	#planet1:hover{
+		box-shadow: 0px 0px 15px #2e6c7f, inset 0px 0px 25px #2e6c7f;
+		transition: all 0.5s;
+	}
+	#planet1:not(hover){
+		transition: all 0.5s;
+	}
+	
+#planet2{
+	position:absolute;
+	top:480px;
+	left:640px;
+	animation-name:planet2;
+	border-radius: 88px;
+}
+	#planet2:hover{
+		box-shadow: 0px 0px 15px #5b07b0, inset 0px 0px 25px #5b07b0;
+		transition: all 0.5s;
+	}
+	#planet2:not(hover){
+		transition: all 0.5s;
+	}
+	
+#planet3{
+	position:absolute;
+	top:650px;
+	left:1400px;
+	animation-name:planet3;
+	border-radius: 100%;
+	z-index:1;
+}
+	#planet3:hover{
+		box-shadow: 0px 0px 15px #086d8c, inset 0px 0px 25px #086d8c;
+		transition: all 0.5s;
+	}
+	#planet3:not(hover){
+		transition: all 0.5s;
+	}
+		
+#planet4{
+	position:absolute;
+	top:750px;
+	left:1700px;
+	animation-name:planet4;
+	border-radius: 88px;
+	z-index:1;
+}
+	#planet4:hover{
+		box-shadow: 0px 0px 15px #7baddb, inset 0px 0px 25px #7baddb;
+		transition: all 0.5s;
+	}
+	#planet4:not(hover){
+		transition: all 0.5s;
+	}
+	
+.planet:hover{
+	animation-duration:3s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+}
+
+	@keyframes planet2{
+		
+		0%{
+			top:480px;
+			left:640px;
+		}
+		50%{
+			top:481px;
+			left:640px;
+		}
+		75%{
+			top:481px;
+			left:641px;
+		}
+		100%{
+			top:480px;
+			left:641px;
+		}
+
+	}
+	@keyframes planet3{
+			0%{
+				top:650px;
+				left:1400px;
+			}
+			25%{
+				top:651px;
+				left:1400px;
+			}
+			50%{
+				top:651px;
+				left:1401px;
+			}
+			100%{
+				top:650px;
+				left:1401px;
+			}
+		}
+		@keyframes planet1{
+			0%{
+				top:250px;
+				left:180px;
+			}
+			25%{
+				top:251px;
+				left:180px;
+			}
+			50%{
+				top:251px;
+				left:181px;
+			}
+			100%{
+				top:250px;
+				left:181px;
+			}
+		}
+		
+		@keyframes planet4{
+			0%{
+				top:750px;
+				left:1700px;
+			}
+			25%{
+				top:751px;
+				left:1700px;
+			}
+			50%{
+				top:751px;
+				left:1701px;
+			}
+			100%{
+				top:750px;
+				left:1701px;
+			}
+		}
+#sun{
+	width:300px;
+	height:300px;
+	position:absolute;
+	left:800px;
+	top:95px;
+	box-shadow: 0px 0px 450px #ffd500, inset 0px 0px 100px 100px #ffc905;
+	border-radius: 100%;
+	animation-name:sun;
+	
+}
+	#sun:hover{
+		box-shadow: 0px 0px 450px #ffd500, inset 0px 0px 100px 100px #ffc905;
+		transition: all 0.5s;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	@keyframes sun{
+			0%{
+				box-shadow: 0px 0px 450px #ff9b05, inset 0px 0px 100px 100px #ffc905;
+				top:95px;
+				left:800px;
+			}
+			25%{
+				box-shadow: 0px 0px 450px #ffd500, inset 0px 0px 100px 100px #ffc905;
+				top:96px;
+				left:800px;
+			}
+			50%{
+				box-shadow: 0px 0px 450px #ff9b05, inset 0px 0px 100px 100px #ffc905;
+				top:96px;
+				left:801px;
+			}
+			100%{
+				box-shadow: 0px 0px 450px #ffd500, inset 0px 0px 100px 100px #ffc905;
+				top:95px;
+				left:801px;
+			}
+		}
+#ExplainingForPlanet1{
+	width:300px;
+	height:300px;
+	position:absolute;
+	top:250px;
+	left:280px;
+	border-radius:3px;
+	box-shadow:inset 0px 0px 32px 100px #d8a2faad,0px 0px 4px 2px #d8a2faad;
+	opacity:0;
+
+}
+	#planet1:hover + #ExplainingForPlanet1{ 
+		animation-name:ExplainingForPlanet1;
+		animation-duration:2s;
+		animation-timing-function:linear;
+		animation-iteration-count:1;
+		animation-fill-mode: forwards;
+	}
+	@keyframes ExplainingForPlanet1{
+		0%{
+			 opacity:0;
+		}
+		100%{
+			 opacity:1;
+		}
+	}
+
+#ExplainingForPlanet2{
+	width:300px;
+	height:300px;
+	position:absolute;
+	top:480px;
+	left:740px;
+	border-radius:3px;
+	box-shadow:inset 0px 0px 32px 100px #d8a2faad,0px 0px 4px 2px #d8a2faad;
+	opacity:0;
+}
+	#planet2:hover + #ExplainingForPlanet2{ 
+		animation-name:ExplainingForPlanet2;
+		animation-duration:2s;
+		animation-timing-function:linear;
+		animation-iteration-count:1;
+		animation-fill-mode: forwards;
+	}
+	@keyframes ExplainingForPlanet2{
+		0%{
+			 opacity:0;
+		}
+		100%{
+			 opacity:1;
+		}
+	}
+#ExplainingForPlanet3{
+	width:300px;
+	height:300px;
+	position:absolute;
+	top:550px;
+	left:1500px;
+	border-radius:3px;
+	box-shadow:inset 0px 0px 32px 100px #d8a2faad,0px 0px 4px 2px #d8a2faad;
+	opacity:0;
+}
+	#planet3:hover + #ExplainingForPlanet3{ 
+		animation-name:ExplainingForPlanet3;
+		animation-duration:2s;
+		animation-timing-function:linear;
+		animation-iteration-count:1;
+		animation-fill-mode: forwards;
+		z-index:2;
+	}
+	@keyframes ExplainingForPlanet3{
+		0%{
+			 opacity:0;
+		}
+		100%{
+			 opacity:1;
+		}
+	}
+#ExplainingForPlanet4{
+	width:300px;
+	height:300px;
+	position:absolute;
+	top:550px;
+	left:1400px;
+	border-radius:3px;
+	box-shadow:inset 0px 0px 32px 100px #d8a2faad,0px 0px 4px 2px #d8a2faad;
+	z-index:0;
+	opacity:0;
+}
+	#planet4:hover + #ExplainingForPlanet4{ 
+		animation-name:ExplainingForPlanet4;
+		animation-duration:2s;
+		animation-timing-function:linear;
+		animation-iteration-count:1;
+		animation-fill-mode: forwards;
+		z-index:2;
+	}
+	@keyframes ExplainingForPlanet4{
+		0%{
+			 opacity:0;
+		}
+		100%{
+			 opacity:1;
+		}
+	}
+	#TowerHead{
+		text-align:center;
+		color:#ffffff;
+		font-family: cursive;
+		margin-top:10.5px;
+		height:13px;
+	}
+	#TowerArt{
+		position:absolute;
+		left:2.5px;
+		top:50px;
+		border:2px solid #000000;
+	}		
+
+
+
+		
+#spaceship{
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:780px;
+	left:210px;
+	
+}
+
+
+	
+	
+	
+	
+	
+	
+	
